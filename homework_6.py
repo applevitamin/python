@@ -3,14 +3,14 @@
 # ___________________START
 ticket = int(input('Введите 6-ти значный номер билета: '))
 # 321654
-a = ticket // 100000
-b = ticket // 1000 % 100 // 10
-c = ticket // 1000 % 10
-d = ticket % 1000 // 100
-e = ticket % 100 // 10
-f = ticket % 10
-second_sum = d+e+f
-first_sum = a+b+c
+# a = ticket // 100000
+# b = ticket // 1000 % 100 // 10
+# c = ticket // 1000 % 10
+# d = ticket % 1000 // 100
+# e = ticket % 100 // 10
+# f = ticket % 10
+second_sum = ticket % 1000 // 100 + ticket % 100 // 10 + ticket % 10
+first_sum = ticket // 100000 + ticket // 1000 % 100 // 10 + ticket // 1000 % 10
 if ticket < 100000 or ticket > 999999:
     print('Число не 6-ти значное!')
 else:
