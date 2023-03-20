@@ -5,6 +5,7 @@
 # стороной. Выведите минимальное количество монет, которые нужно
 # перевернуть.
 import random
+print('\n')
 print('0 - Герб | 1 - Решка')
 mycoins = [random.randint(0, 1) for _ in range(20)]
 print(mycoins)
